@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+</head>
+
+<body>
+    <div class="device">
+        <h1>Bulbassauro</h1>
+        <div class="tela">
+            <div class="pokemons" id="pokemonList">
+                <div class="voltar">
+                    <a href="index.html" id="voltar" onclick="event.preventDefault(); history.back();"><img
+                            src="assets/img/Voltar.png" alt="voltar"></a>
+                </div>
+                <li class="pokemon">
+                    <div class="spritespace">
+                        <img src="#"
+                            alt="Carregando..." id="sprite">
+                    </div>
+                    <div class="detail">
+                        <ul class="types">
+                            <span class="type grass">Carregando...</span>
+                            <span class="type poison">Carregando...</span>
+                        </ul>
+                        <article>
+                            <h2>Sobre:</h2>
+                            <table class="vertical-table">
+                                <tr>
+                                    <th>Espécie:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Altura:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Peso:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Habilidades:</th>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <h2>Status Base:</h2>
+                            <table class="vertical-table">
+                                <!-- Conteúdo sendo inserido pelo JavaScript -->
+                            </table>
+                            <h2>Movimentos:</h2>
+                        </article>
+                    </div>
+                </li>
+            </div>
+        </div><!--tela-->
+
+    </div><!--Device-->
+
+
+
+    <script src="assets/js/pokemonModel.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/detail.js"></script>
+
+</body>
+
+</html>
